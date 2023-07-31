@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    background: url("../images/background.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.sign_up{
+   
+    width: 500px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid green;
+    box-shadow: 0 0 7px 5px rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    /* backdrop-filter: blur(65px); */
+   
+}
+
+
+
+.sign_up h2{
+    color: green;
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.input_name{
+    color: black;
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+
+}
+
+.lock{
+    padding: 8px 11px;
+}
+
+.name{
+    width: 43%;
+    padding: 8px 0 8px 40px;
+    border-radius: 10px;
+}
+
+.type_name{
+    margin-left: 22px;
+}
+
+
+
+.input_name span{
+    margin-left: 35px;
+}
+
+
+.email_name{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+    border-radius: 10px;
+}
+
+.product_detail{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+    height: 160px;
+    resize: none;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.product_detail:focus::placeholder{
+    color: green;
+}
+
+.input_name i
+{
+    position: absolute;
+    font-size: 18px;
+    color: green;
+    border-right: 1px solid #cccccc;
+}
+.email {
+    padding: 8px;
+}
+
+.fa-user {
+    padding: 8px;
+}
+
+.email_name, .name{
+    border: 1px solid #cccccc;
+    outline: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.email_name:hover, .name:hover
+{
+    background-color: #fafafa;
+}
+
+.email_name:focus, .name:focus{
+    border: 1px solid green;
+}
+
+.radio_text{
+   
+    margin-right: 4px;
+}
+
+.input_name label{
+    margin-right: 30px;
+}
+
+.country{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    color: #7b7b7b;
+    border-radius: 0;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 0.2s ease;
+}
+
+.country::ms-expand{
+    display: none;
+}
+
+
+.country:hover, .country:focus{
+    color: blue;
+    background: #fafafa;
+    border-color: blue;
+    outline: none;
+}
+
+.arrow{
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+
+.country:hover + .arrow, .country:focus +arrow
+{
+    border-top-color: blue;
+}
+
+.check_lb
+{
+    color: black;
+    margin-right: 15px;
+    position: relative;
+}
+
+.check_lb::before
+{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    vertical-align: -2px;
+    border: 2px solid #cccccc;
+    padding: 2.5px;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+}
+
+.check_lb::after
+{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    content: "";
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 7px;
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    width: 7px;
+    display: none;
+}
+
+.check_box
+{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+.check_box:hover +.check_lb::before
+{
+    border-color: blue;
+}
+
+.check_box:checked +.check_lb::before
+{
+    border-color: green;
+}
+
+.check_box:checked +.check_lb::after
+{
+    -moz-animation: check 0.8s ease 0s running;
+    -webkit-animation: check 0.8s ease 0s running;
+    animation: check 0.8s ease 0s running;
+    display: block;
+    width: 7px;
+    height: 20px;
+    border-color: green;
+}
+
+@-webkit-keyframes check
+{
+    0%{height: 0; width: 0;}
+    25%{height: 0; width: 7px;}
+    50%{height: 20px; width: 7px;}
+}
+
+.sign_button
+{
+    border-radius: 10px;
+    background: linear-gradient(45deg, #018e2c, #63cd06e1, #05c56f );
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sign_button:hover
+{
+    background: linear-gradient(45deg, rgb(15, 223, 15), rgb(2, 160, 2), rgb(173, 214, 6) );
+}
+
+@media (max-width: 480px)
+{
+    .sign_up{
+        width: 100%;
+        border: 2px solid blue;
+        padding: 5px;
+        border-radius: 0;
+    }
+    .input_name
+    {
+        margin-bottom: -4px;
+    }
+    .name
+    {
+        width: 100%;
+        padding: 8px 0 8px 40px;
+        margin-bottom: 10px;
+        border-radius: 35px;
+    }
+    .type_name{
+        margin-left: 20px;
+        width: 160px;
+    }
+    .email_name
+    {
+        border-radius: 35px;
+    }
+    .input_name span 
+    {
+        padding: 0;
+        margin: 0;
+
+    }
+    .sign_up_inner
+    {
+        width: 100%;
+    }
+    .sign_button
+    {
+        border-radius: 25px;
+    }
+}

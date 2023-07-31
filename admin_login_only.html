@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="sign_up">
+        <h2>Admin Access</h2>
+        <div class="sign_up_inner">
+            <form enctype="multipart/form-data" id="adminFormSubmit">
+
+
+                <div class="input_name">
+                    <i class="fa fa-envelope email"></i>
+                     <input type="email" placeholder="Enter Email" name="email" id="adminEmail" required class="email_name">
+                 </div>
+
+                
+
+                 <div class="input_name">
+                    <i class="fa fa-lock lock"></i>
+                     <input type="password" placeholder="Password" name="password" id="adminPassword" required class="email_name">
+                 </div>
+
+                 <div class="input_name">
+                    <button type="submit" class="sign_button"  readonly> Login Now</button>
+                </div>
+
+            </form>
+            
+        </div>
+
+        <div class="input_name">
+            <label class="already_acc">Not An Admin? <a href="index.html" style="color:green">Go to Main page to Login</a></label>
+        </div>
+       
+        
+       
+    </div>
+
+    <script src="./js/admin_login.js"></script>
+</body>
+</html>

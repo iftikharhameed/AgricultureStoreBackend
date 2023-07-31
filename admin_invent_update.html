@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="slidebar">
+        <div class="slidebar-brand">
+            <h2><span class="lab la-accusoft"></span>
+                <span>Admin</span></h2>
+        </div>
+
+        <div class="slidebar-menu">
+            <ul>
+                <li>
+                    <a href="admin.html" >
+                        <span class="las la-igloo"></span>
+                        <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="admin_customer.html">
+                        <span class="las la-users"></span>
+                        <span>Customer</span></a>
+                </li>
+                <li>
+                    <a href="admin1.html">
+                        <span class="las la-shopping-bag"></span>
+                        <span>Orders</span></a>
+                </li>
+                <li>
+                    <a href="admin_invent.html" class="active">
+                        <span class="las la-receipt"></span>
+                        <span>Inventory</span></a>
+                </li>
+                <li>
+                    <a href="admin_account.html">
+                        <span class="las la-user-circle"></span>
+                        <span>Accounts</span></a>
+                </li>
+                <li>
+                    <a href="index.html" id="adminlogout">
+                        <span class="fa fa-sign-out"></span>
+                        <span>Log Out</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars" id="icon"></span>
+                </label>
+                Inventory
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="search here">
+            </div>
+
+            
+
+            <div class="user-wrapper">
+                <div class="notification">
+                    <span class="fa fa-bell" id="icon"></span>
+                </div>
+                <img src="images/poster1.jpg" width="40px" height="40px" alt="">
+                <div>
+                    <h4 id="adminloginfo"></h4>
+                    <small>Super admin</small>
+                </div>
+                
+            </div>
+            
+
+        </header>
+
+        <main>
+            <section id="cart" class="section-p1">
+                
+
+                <div class="table-update">
+                    <div class="tbl">
+                      <form id="updateForm">
+                    <h1>Product Update</h1>
+                      <label for="productId">Product Type:</label>
+                      <input type="text" id="producttype" name="productId">
+                  
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name">
+                  
+                      <label for="name">price:</label>
+                      <input type="text" id="price" name="price">
+                  
+                      <label for="quantity">quantity:</label>
+                      <input type="text" id="quantity" name="quantity">
+                  
+                      <label for="description">Category:</label>
+                      <input type="text" id="category" name="category">
+                  
+                      <label for="image">Image URL:</label>
+                      <input type="text" id="image" name="image">
+                  
+                      <button type="submit">Update Product</button>
+                    </form>
+                  </div>
+
+            
+
+
+                  </div>
+                  
+                  
+                
+                  
+                  
+
+            </section>
+
+        </main>
+
+       
+    </div>
+
+    
+</body>
+    <script src="./js/admin_invent_update.js"></script>
+    <script src="./js/admin_invent_update_2.js"></script>
+    <script src="./js/admin_invent_delete.js"></script>
+    <script src="./js/admin_logout_session.js"></script>
+</html>
